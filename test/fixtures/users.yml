@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# user_one:
+#   name: Test User
+#   email: test@user.com
+#   password_digest: password
+#   created_at: <%= DateTime.new() %>
+#   updated_at: <%= DateTime.new() %>>
+
+# user_two:
+#   name: Second User
+#   email: test2@user.com
+#   password_digest: password
+#   created_at: <%= DateTime.new() %>
+#   updated_at: <%= DateTime.new() %>>
+
+

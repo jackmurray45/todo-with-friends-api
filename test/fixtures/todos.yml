@@ -1,0 +1,16 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# one:
+#   content: MyString
+#   due_by: <%= DateTime.new() %>
+#   user_id: 1
+#   created_at: <%= DateTime.new() %>
+#   updated_at: <%= DateTime.new() %>>
+
+# two:
+#   content: MyString
+#   content: MyString
+#   due_by: <%= DateTime.new() %>
+#   user_id: 1
+#   created_at: <%= DateTime.new() %>
+#   updated_at: <%= DateTime.new() %>>
