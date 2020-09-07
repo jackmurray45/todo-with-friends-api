@@ -18,5 +18,4 @@ class TodoFriendTest < ActiveSupport::TestCase
     assert false
   end
 
-  def 
 end
