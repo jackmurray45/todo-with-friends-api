@@ -60,8 +60,8 @@ ActiveRecord::Schema.define(version: 2020_09_06_222451) do
 
   add_foreign_key "friendships", "users", column: "friend_id", on_delete: :cascade
   add_foreign_key "friendships", "users", on_delete: :cascade
-  add_foreign_key "todo_friends", "todos"
-  add_foreign_key "todo_friends", "users"
-  add_foreign_key "todo_items", "todos"
+  add_foreign_key "todo_friends", "todos", on_delete: :cascade
+  add_foreign_key "todo_friends", "users", on_delete: :cascade
+  add_foreign_key "todo_items", "todos", on_delete: :cascade
   add_foreign_key "todos", "users", on_delete: :cascade
 end
