@@ -7,7 +7,7 @@ class TodoFriendTest < ActiveSupport::TestCase
     @user = User.create(name: Faker::Name.name, email: Faker::Internet.email,
                      password: "foobar", password_confirmation: "foobar")
 
-    todo = @user.todos.new(title: Faker::Lorem.word, due_by: Faker::Time)
+    todo = @user.todos.new(title: Faker::Lorem.word)
   end
 
   test "can only add friends to todo" do

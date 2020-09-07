@@ -9,23 +9,14 @@ class TodoTest < ActiveSupport::TestCase
   end
 
   test "create todo through user" do
-    todo = @user.todos.new(title: Faker::Lorem.word, due_by: Faker::Time)
+    todo = @user.todos.new(title: Faker::Lorem.word)
 
     assert todo.valid?
   end
 
   test "title cannot be empty" do
-    todo = Todo.new(title: '', due_by: Faker::Time, user_id: @user.id)
+    todo = Todo.new(title: '', user_id: @user.id)
     assert_not todo.valid?
   end
-
-  test "due by can be null" do
-    todo = Todo.new(title: Faker::Lorem.word, user_id: @user.id)
-    assert todo.valid?
-  end
-
-
-
-
 
 end
