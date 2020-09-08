@@ -19,4 +19,9 @@ class TodoTest < ActiveSupport::TestCase
     assert_not todo.valid?
   end
 
+  test "get user from todo" do
+    todo = Todo.new(title: '', user_id: @user.id)
+    assert_equal @user.id, todo.user.id
+  end
+
 end
